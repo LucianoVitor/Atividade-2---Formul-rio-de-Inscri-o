@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 Formulario</title>
+</head>
+
+<body>
+
+    <!-- Neste código foi utilizado apenas HTML, por isso existe um uso frequente de <br> e alguns <hr> -->
+
+    <!-- Cabeçalho -->
+
+    <header>
+        <h1>Formulário de Inscrição</h1>
+        <h3>Preencha os campos abaixo com as suas informações pessoais</h3>
+        <hr>
+    </header><br>
+
+    <!-- Principal -->
+
+    <main>
+        <form action="#" method="post">
+
+            <div>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+            </div>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+            </div>
+
+            <div>
+                <label for="data_nascimento">Data de Nascimento:</label><br>
+                <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+            </div>
+
+            <div>
+                <label for="genero">Gênero:</label><br>
+                <input type="radio" id="genero" name="genero" required> Feminino<br>
+                <input type="radio" id="genero" name="genero" required> Masculino</label><br><br>
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="text" id="mensagem" name="mensagem" maxlength="200" required></textarea><br><br>
+            </div>
+
+            <div>
+                <label for="tipo_inscricao">Tipo de Inscrição:</label><br>
+                <select id="tipo_inscricao" name="tipo_inscricao" required>
+                    <option value="">Selecione...</option>
+                    <option value="palestrante">Palestrante</option>
+                    <option value="participante">Participante</option>
+                    <option value="voluntario">Voluntário</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar"><br><br>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer>
+        <hr>
+        <p>As informações prestadas neste formulário e sua autenticidade são de plena responsabilidade do usuário e este
+            deve estar ciente de que a falsidade nas informações prestadas implicará nas penalidades cabíveis.</p>
+    </footer>
+
+</body>
+
+</html>
